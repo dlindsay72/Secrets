@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B7E3F8220179F99007A62E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E3F8120179F99007A62E9 /* AppDelegate.swift */; };
-		7B7E3F8420179F99007A62E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E3F8320179F99007A62E9 /* ViewController.swift */; };
+		7B7E3F8420179F99007A62E9 /* NoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E3F8320179F99007A62E9 /* NoteVC.swift */; };
 		7B7E3F8720179F99007A62E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E3F8520179F99007A62E9 /* Main.storyboard */; };
 		7B7E3F8920179F99007A62E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E3F8820179F99007A62E9 /* Assets.xcassets */; };
 		7B7E3F8C20179F99007A62E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E3F8A20179F99007A62E9 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		7B7E3F7E20179F99007A62E9 /* Secrets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Secrets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7E3F8120179F99007A62E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B7E3F8320179F99007A62E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B7E3F8320179F99007A62E9 /* NoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVC.swift; sourceTree = "<group>"; };
 		7B7E3F8620179F99007A62E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B7E3F8820179F99007A62E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B7E3F8B20179F99007A62E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,54 @@
 		7B7E3F8020179F99007A62E9 /* Secrets */ = {
 			isa = PBXGroup;
 			children = (
-				7B7E3F8120179F99007A62E9 /* AppDelegate.swift */,
-				7B7E3F8320179F99007A62E9 /* ViewController.swift */,
-				7B7E3F8520179F99007A62E9 /* Main.storyboard */,
+				7B7E3F972017A06A007A62E9 /* Helpers */,
+				7B7E3F962017A05F007A62E9 /* Enums */,
+				7B7E3F952017A052007A62E9 /* Model */,
+				7B7E3F942017A04D007A62E9 /* View */,
+				7B7E3F932017A03C007A62E9 /* Controller */,
 				7B7E3F8820179F99007A62E9 /* Assets.xcassets */,
-				7B7E3F8A20179F99007A62E9 /* LaunchScreen.storyboard */,
 				7B7E3F8D20179F99007A62E9 /* Info.plist */,
 			);
 			path = Secrets;
+			sourceTree = "<group>";
+		};
+		7B7E3F932017A03C007A62E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E3F8120179F99007A62E9 /* AppDelegate.swift */,
+				7B7E3F8320179F99007A62E9 /* NoteVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B7E3F942017A04D007A62E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E3F8A20179F99007A62E9 /* LaunchScreen.storyboard */,
+				7B7E3F8520179F99007A62E9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B7E3F952017A052007A62E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B7E3F962017A05F007A62E9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7B7E3F972017A06A007A62E9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B7E3F8420179F99007A62E9 /* ViewController.swift in Sources */,
+				7B7E3F8420179F99007A62E9 /* NoteVC.swift in Sources */,
 				7B7E3F8220179F99007A62E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
