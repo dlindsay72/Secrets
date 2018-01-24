@@ -36,5 +36,33 @@ extension NoteVC: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //pass note and present viewcontroller
+        pushNoteFor(indexPath: indexPath)
+    }
+    
+    func pushNoteFor(indexPath: IndexPath) {
+        guard let noteDetailVC = storyboard?.instantiateViewController(withIdentifier: "NoteDetailVC") as? NoteDetailVC else { return }
+        noteDetailVC.note = notesArray[indexPath.row]
+        noteDetailVC.index = indexPath.row
+        navigationController?.pushViewController(noteDetailVC, animated: true)
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
